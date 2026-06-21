@@ -17,7 +17,6 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 | [OneData](https://github.com/InternetOfPins/OneData) | Typed data wrappers — Data, Watch, NumRange, StaticText |
 | [OneItem](https://github.com/InternetOfPins/OneItem) | Menu item definitions — fields, actions, labels |
 | [OneMenu](https://github.com/InternetOfPins/OneMenu) | Composable menu system — navigation, rendering, input |
-| [OneList](https://github.com/InternetOfPins/OneList) | Heterogeneous list structures |
 | [OneParse](https://github.com/InternetOfPins/OneParse) | Zero-overhead parser combinators |
 | [OneBit](https://github.com/InternetOfPins/OneBit) | Bit-level pin and port abstractions |
 | [OnePin](https://github.com/InternetOfPins/OnePin) | Digital pin API — InPin, OutPin, IOPin |
