@@ -22,6 +22,7 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 | [OnePin](https://github.com/InternetOfPins/OnePin) | Digital pin API — InPin, OutPin, IOPin |
 | [OneChip](https://github.com/InternetOfPins/OneChip) | MCU peripheral abstractions — ISR, port allocation |
 | [OneBus](https://github.com/InternetOfPins/OneBus) | Communication bus abstractions |
+| [OneSensor](https://github.com/InternetOfPins/OneSensor) | Sensor drivers parameterized on bus and chip — DS18B20, MPU6050 |
 | [OneIO](https://github.com/InternetOfPins/OneIO) | Physical device drivers — displays, sensors, actuators |
 
 ## Targets
