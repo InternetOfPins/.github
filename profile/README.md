@@ -27,7 +27,9 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 
 ## Targets
 
-AVR (Arduino Uno, Mega) · ESP32 · Linux/native · PlatformIO
+AVR (Uno, Mega, ATtiny13/45/85) · STM32 · nRF52 · ESP32 · ESP8266 · CH32V003 (compile-verified) · Linux/native
+
+Built and tested via PlatformIO.
 
 ## Requirements
 
