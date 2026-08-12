@@ -22,6 +22,7 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 | [OnePin](https://github.com/InternetOfPins/OnePin) | Digital pin API — InPin, OutPin, IOPin |
 | [OneChip](https://github.com/InternetOfPins/OneChip) | MCU peripheral abstractions — ISR, port allocation |
 | [OneBus](https://github.com/InternetOfPins/OneBus) | Communication bus abstractions |
+| [OneInput](https://github.com/InternetOfPins/OneInput) | Input event chains — debounce, click/hold, encoder, analog joystick |
 | [OneSensor](https://github.com/InternetOfPins/OneSensor) | Sensor drivers parameterized on bus and chip — DS18B20, MPU6050 |
 | [OneIO](https://github.com/InternetOfPins/OneIO) | Physical device drivers — displays, sensors, actuators |
 
@@ -30,6 +31,10 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 AVR (Uno, Mega, ATtiny13/45/85) · STM32 · nRF52 · ESP32 · ESP8266 · CH32V003 (compile-verified) · Linux/native
 
 Built and tested via PlatformIO.
+
+## Hardware synthesis (HLS)
+
+The "compiles away" claim has been checked against more than a traditional compiler: HAPI, OneParse, OneBit, OneData, OneItem, and OneOutput have been run through High-Level Synthesis (Bambu/PandA, with Vitis HLS and Intel HLS Compiler scaffolding in progress) — turning the same template-composed C++ into real RTL. The heterogeneous chain, query, and rule machinery survives synthesis intact, confirming the zero-overhead design holds down to hardware, not just object code.
 
 ## Requirements
 
