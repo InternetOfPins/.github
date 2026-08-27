@@ -39,4 +39,4 @@ The "compiles away" claim has been checked against more than a traditional compi
 
 ## Requirements
 
-C++17 or later. No STL dependency on AVR targets.
+C++17 or later. No STL dependency on AVR targets. Every library's CI compiles and runs its test suite against g++, Clang, and MSVC (cl.exe) on each push — not just a GCC-flavored subset of the standard.
