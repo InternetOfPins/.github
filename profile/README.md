@@ -35,7 +35,7 @@ Built and tested via PlatformIO.
 
 ## Hardware synthesis (HLS)
 
-The "compiles away" claim has been checked against more than a traditional compiler: HAPI, OneParse, OneBit, OneData, OneItem, and OneOutput have been run through High-Level Synthesis (Bambu/PandA, with Vitis HLS scaffolding in progress) — turning the same template-composed C++ into real RTL. The heterogeneous chain, query, and rule machinery survives synthesis intact, confirming the zero-overhead design holds down to hardware, not just object code. [OneHLS](https://github.com/InternetOfPins/OneHLS) builds on this with type-agnostic DSP and control components meant to be synthesized directly.
+The "compiles away" claim has been checked against more than a traditional compiler: HAPI, OneParse, OneBit, OneData, OneItem, and OneOutput have been run through High-Level Synthesis on two independent toolchains — Bambu/PandA (open-source) and AMD Vitis HLS 2026.1 — turning the same template-composed C++ into real RTL. The heterogeneous chain, query, and rule machinery survives synthesis intact on both, confirming the zero-overhead design holds down to hardware, not just object code. [OneHLS](https://github.com/InternetOfPins/OneHLS) builds on this with type-agnostic DSP and control components meant to be synthesized directly.
 
 ## Requirements
 
