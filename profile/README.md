@@ -29,9 +29,13 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 
 ## Targets
 
-AVR (Uno, Mega, ATtiny13/45/85) · STM32 · nRF52 · ESP32 · ESP8266 · CH32V003 (compile-verified) · Linux/native
+AVR (Uno, Mega, ATtiny13/45/85) · STM32 (F0/F1 hardware-verified) · nRF52 · ESP32 · ESP8266 · CH32V003 (compile-verified) · Linux/native
 
-Built and tested via PlatformIO.
+Built and tested via PlatformIO. On STM32F103, GPIO / UART / SPI / I2C and the composed OneIO device drivers (SPI angle sensor, TIM1 3-phase PWM, HD44780 I2C LCD) are brought up on real silicon and confirmed by register readback, no ST HAL.
+
+## Beyond C++
+
+A HAPI-composed driver stack is consumable unmodified from non-C++ firmware over the C ABI. [HAPI's `rust_stm32_bridge`](https://github.com/InternetOfPins/HAPI/tree/main/examples/rust_stm32_bridge) drives the real `OneIO → OneBus → OneChip` I2C character-LCD stack from Rust firmware (`cortex-m-rt` / `stm32f1xx-hal`) on a real STM32F103 — same call sites, no vtable underneath, hardware-verified. The FFI call itself is a genuine boundary; the zero-overhead property holds inside the C++ composition, not across the language edge.
 
 ## Hardware synthesis (HLS)
 
