@@ -25,6 +25,7 @@ Built on [HAPI](https://github.com/InternetOfPins/HAPI) — a zero-overhead hete
 | [OneInput](https://github.com/InternetOfPins/OneInput) | Input event chains — debounce, click/hold, encoder, analog joystick |
 | [OneSensor](https://github.com/InternetOfPins/OneSensor) | Sensor drivers parameterized on bus and chip — DS18B20, MPU6050 |
 | [OneIO](https://github.com/InternetOfPins/OneIO) | Physical device drivers — displays, sensors, EEPROM, PWM, RTC, RF |
+| [OneMachine](https://github.com/InternetOfPins/OneMachine) | Runtime device discovery, failure handling and health monitoring over a scanned bus, plus ROS-shaped pub/sub, services and actions |
 | [OneHLS](https://github.com/InternetOfPins/OneHLS) | HLS-synthesizable DSP and control components |
 
 ## Targets
